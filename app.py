@@ -100,7 +100,7 @@ def login_user(username, password):
 
 # ===== CONFIG =====
 try:
-    API_KEY = "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"
+    API_KEY = st.secrets["OPENROUTER_API_KEY"]
 except KeyError:
     st.error("API key not found. Please check your secrets.toml file")
     st.stop()
